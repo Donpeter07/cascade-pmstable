@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./PatientForm.css">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+            border-collapse: collapse;
+          /* width: 89vw; */
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: center;
+          /* padding: 8px; */
+        }
+        .row {
+            display: flex;
+
+        }
+        .card-border {
+          border: 1px solid black;  
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .col-3 ,.col-4 ,.col-6{
+            padding: 10px;
+        }
+        .box1 {
+            width: 52%;
+        }
+        
+        
+        
+        </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" style="border: 2px solid gray;padding: 20px; border-radius: 8px;">
+        <div style="border: 2px solid black;width:100%;position: relative;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5ppoPb1psqBv_AOEWpURnnyxQmGMLFAPBxDT2Cw&s" alt="" style='border: 2px solid black;margin-top: 20px;margin-left: 20px;'>
+                <h4 style="margin-top:0px;margin-left: 19px;">FLUSHING ROAD URGENT CARE PC </h4>
+                <h5 style="margin-top:-19px;margin-left: 19px;">1301 FLUSHING RD,FLINT,MI,48504,United States</h5>
+            
+            <div style="position: absolute; top:115px;left: 36px; z-index: 10;">
+                <input type="file" id='file' style='display: none;' />
+                <label for='file' id='file' style="color: transparent;">upload image</label>
+            </div>
+            
+            <div style="display: flex; margin-left: 20px;">
+                <div style="border: 2px solid black;width: 563px;">
+                    <div style="display: flex;justify-content: space-around;">
+                        <div><p>Statement Date</p><p style="text-align: center;">2022-10-03</p></div>
+                        <div><p>Pay this Amount</p><p style="text-align: center;">$6.74</p></div>
+                        <div><p>Account</p><p>1555</p style="text-align: center;" ></div>
+                    </div>
+                    <hr>
+                    <div style="display: flex; justify-content: space-around;">
+                        <p>Payment sue Date:2022-10-13</p>
+                        <p>SHOW AMOUNT PAID HERE</p>
+                    </div>
+                </div>
+                <div style="margin-left: 30px;display: flex;flex-direction: column;gap: 5px; margin-top: 20px;">
+                    <strong>DellCrow</strong>
+                    <span>750 WWalnut st.Lynnvillie,illinois,United States</span>
+                </div>
+
+            </div>
+            <div style="display: flex; justify-content: space-between;margin-top: 25px;width: 1000px;
+            margin-left: 20px;">
+                <div><p>Amount#: <span> 1555</span></p></div>
+                <div><p>Please Pay: <span>$0</span></p></div>
+                <div><p>Due Date: <span>2022-190-13</span></p></div>
+            </div>
+
+            <p  style="margin-left: 20px;margin-bottom: 0px;">Important message</p>
+            <div style="margin-left: 20px; display: flex;">
+                <div><textarea cols="75" rows="13" style="padding: 5px;">important message</textarea></div>
+                <div style="margin-left: 30px;">
+                    <div>
+                        <p style="margin-bottom: 0px;">Contact Info</p>
+                        <textarea cols="70px" rows="3px" style="padding: 5px;">contact info</textarea></div>
+                    <div>
+                        <p style="margin-bottom: 0px;">Web Payment Info</p>
+                        <textarea cols="70px" rows="3px" style="padding: 5px;">Web Payment info</textarea></div>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <table style="border: 1px solid black; margin-left: 20px;margin-top: 10px; width: 89vw;">
+                        <thead style="background-color: rgb(70, 181, 245);">
+                            <th>#</th>
+                            <th>DOS</th>
+                            <th>Claim #</th>
+                            <th>Provider</th>
+                            <th>Charges</th>
+                            <th>Payments</th>
+                            <th>Adjustments</th>
+                            <th>Balance</th>
+                            <th>Insurance Bal</th>
+                            <th>patient Bal</th>
+                            <th>Claim Status</th>
+                            <th>Balance Payer</th>
+                        </thead>
+                       <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>1/27/2022</td>
+                                <td>687</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>nil</td>
+                                <td>nil</td>
+    
+                            </tr>
+                           
+                            <tr>
+                                <td>1</td>
+                                <td>1/27/2022</td>
+                                <td>687</td>
+                                <td></td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>nil</td>
+                                <td>nil</td>
+    
+                            </tr>
+    
+    
+                        <tr >
+                            <td colspan="12">
+                                <table style="margin: 17px; width: 85vw;" >
+                                    <thead style="background-color:rgb(40, 109, 213);">
+                                        <th>CPT</th>
+                                        <th>Descriptions</th>
+                                        <th>Units</th>
+                                        <th>Charges</th>
+                                        <th>Payments</th>
+                                        <th>Adjustmets</th>
+                                        <th>Balance</th>
+                                        <th>Insurance Bal</th>
+                                        <th>Patient Bal</th>
+                                        <th>Claim Status</th>
+                                        <th>Balance Payer</th>
+                                    </thead>
+    
+                                  
+                                        
+                           <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td>687</td>
+                                    <td></td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>nil</td>
+        
+                                </tr>
+                                        
+                                       
+        
+                                        <tr>
+                                            <td colspan="11" style="padding: 20px">
+                                                <table style=" width: 100%; ;">
+                                                    <tr style="background-color: gray;">
+                                                        <th>Date</th>
+                                                        <th>Activity</th>
+                                                        <th>Charges</th>
+                                                        <th>Payments</th>
+                                                        <th>Adjustments</th>
+                                                        <th>Balance</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7/1/2022</td>
+                                                        <td>Status changed Claim Incomplete</td>
+                                                        <td>100</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>100</td>
+                    
+                                                    </tr>
+                                                </table>
+                
+                                            </td>
+                                        </tr>
+        
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Oncology</td>
+                                            <td>687</td>
+                                            <td></td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>nil</td>
+                
+                                        </tr>
+        
+                                        <tr>
+                                            <td colspan="11" style="padding: 20px;">
+                                                <table style=" width: 100%;">
+                                                    <tr style="background-color:gray;">
+                                                        <th>Date</th>
+                                                        <th>Activity</th>
+                                                        <th>Charges</th>
+                                                        <th>Payments</th>
+                                                        <th>Adjustments</th>
+                                                        <th>Balance</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7/1/2022</td>
+                                                        <td>Status changed Claim Incomplete</td>
+                                                        <td>100</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>100</td>
+                    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7/1/2022</td>
+                                                        <td>Status changed Claim Incomplete</td>
+                                                        <td>100</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>100</td>
+                    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7/1/2022</td>
+                                                        <td>Status changed Claim Incomplete</td>
+                                                        <td>100</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>100</td>
+                    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7/1/2022</td>
+                                                        <td>Status changed Claim Incomplete</td>
+                                                        <td>100</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
+                                                        <td>100</td>
+                    
+                                                    </tr>
+                                                </table>
+                
+                                            </td>
+                                        </tr>
+        
+                                    </table>
+                                </td>
+                                   
+                                </tr>
+                            </tbody>
+        
+                                <tr>
+                                    <td>3</td>
+                                    <td>1/27/2022</td>
+                                    <td>687</td>
+                                    <td></td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Claim Approved</td>
+                                    <td>nil</td>
+        
+                                </tr>
+                          
+                       </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            
+            <p style="margin-left: 20px;margin-bottom: 0px;">Additional Info</p>
+            <textarea style="width: 88vw; margin-left: 20px;padding: 5px;">Additional Info</textarea>
+            
+            <div style="display: flex;justify-content: space-between;margin-top: 15px;">
+                <strong style="margin-left: 20px;">CHANGE OF ADDRESS OR HEALTH INSURANCE INFORMATION</strong>
+                <span style="margin-right: 200px;">DellaCrow</span>
+            </div>
+
+            <div style="display: flex;justify-content: space-between;margin-bottom: 15px;">
+                <span style="margin-left: 20px;">if you have new health insurance or a new address, please enter the information below</span>
+                <span style="margin-right: 240px;">1115</span>
+            </div>
+
+           
+            <div style="margin-left: 20px;
+            margin-right: 47px;margin-bottom: 23px;"> 
+                <div class="row">
+                    <div class="col-8 card-border">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="form-group mt-1"><label>NEW ADDRESS</label><input type="text"
+                                        class="form-control" disabled=""></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group mt-1"><label>CITY</label><input type="text"
+                                        class="form-control" disabled=""></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group mt-1"><label>STATE</label><input type="text"
+                                        class="form-control" disabled=""></div>
+                            </div>
+                            <div class="col-3">
+                                <div class="form-group mt-1"><label>ZIP CODE</label><input type="text"
+                                        class="form-control" disabled=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 card-border" style="width: 100%;">
+                        <div class="form-group mt-1" ><label>NEW PHONE</label><input type="text" class="form-control" 
+                                disabled=""></div>
+                    </div>
+                </div>
+            
+                <div class="row " >
+                    <div class="col-6 card-border box1">
+                        <div class="form-group "><label>POLICY HOLDERS NAME/ RELATIONSHIP TO
+                                PATIENT</label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group "><label>POLICY ID#
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group"><label>GROUP#
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                   
+                </div>
+                <div class="row ">
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group "><label>EFFECTIVE DATE
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group"><label>BIRTHDATE OF INSURED
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group "><label>POLICY ID#
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border" style="width: 25%;">
+                        <div class="form-group"><label>GROUP#
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                   
+                </div>
+        
+                <div class="row ">
+                    <div class="col-6 card-border" style="width: 100%;">
+                        <div class="form-group "><label>POLICY ID#
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                </div>
+        
+                <div class="row " >
+                    <div class="col-6 card-border box1">
+                        <div class="form-group "><label>INSURANCE COMPANY NAME</label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border box1">
+                        <div class="form-group "><label>INSURANCE <ADDRESS></ADDRESS></label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                </div>
+                <div class="row " >
+                    <div class="col-6 card-border box1">
+                        <div class="form-group "><label>EMPLOYER
+                                </label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                    <div class="col-6 card-border box1">
+                        <div class="form-group "><label>EMPLOYER ADDRESS</label><input type="text" class="form-control" disabled=""></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
